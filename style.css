@@ -1,0 +1,879 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* Media-Queries */
+/* Mobile Styles */
+@media only screen and (max-width: 699px) {
+  body {
+    /* background-color: #F09A9D; /* Red */ */
+  }
+
+  .button {
+    font-weight: bold;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 50px;
+    width: 200px;
+  }
+
+  .non-transparent-button {
+    color: #FFF;
+    background-color: crimson;
+    border: 1px solid crimson;
+  }
+
+  .transparent-button {
+    color: crimson;
+    background-color: transparent;
+    border: 1px solid crimson;
+  }
+
+  .transparent-button-2 {
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  /* Header Section */
+  li {
+    list-style-type: none;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('hero-photo.png');
+    background-size: cover;
+    color: #FFF;
+  }
+
+  .hero-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 75% 15%;
+  }
+
+  .hero-words h2,
+  .hero-words p,
+  .hero-words .button {
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  .hero-words .button {
+    margin-left: 25%;
+  }
+
+  .hero-words h2 {
+    font-size: 40px;
+  }
+
+  .menu {
+    width: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .nav-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0% 35%;
+    overflow: hidden;
+  }
+
+  .nav-bar-item {
+    display flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+
+  .juke-logo-blue-container {
+    display: flex;
+  }
+
+  .juke-logo-blue {
+    display: flex;
+    margin: 5% 40% 5% 40%;
+  }
+
+  /* Pricing Section */
+  .transparent-button-2 {
+    margin-left: 30%;
+  }
+
+  .pricing-basic-free,
+  .pricing-plus-medium,
+  .pricing-premium-high {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 5%;
+  }
+
+  .pricing-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 20px;
+  }
+  .pricing {
+    color: white;
+  }
+
+  .pricing .button {
+    width: 175px;
+  }
+
+  .pricing-words {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10%;
+  }
+
+  .pricing-words-head {
+    color: dodgerblue;
+    font-size: 45px;
+  }
+
+  .pricing-words-sub-head {
+    color: darkgray;
+  }
+
+  .pricing-basic-free {
+    border: 1px solid darkcyan;
+    background-color: darkcyan;
+  }
+
+  .pricing-plus-medium {
+    border: 1px solid darkslateblue;
+    background-color: darkslateblue;
+  }
+
+  .pricing-premium-high {
+    border: 1px solid darkviolet;
+    background-color: darkviolet;
+  }
+
+  .pricing-words-head,
+  .pricing-words-sub-head {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricing-columns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10%
+  }
+
+  /* Album Section */
+  .album-words-head {
+    font-size: 25px;
+  }
+
+  .album-words-sub-head {
+    font-size: 15px;
+    color: darkgray;
+  }
+
+  .album-grid-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .album-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .album-grid-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 6% 6%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  body {
+    /* background-color: #F5CF8E; /* Yellow */ */
+  }
+
+  .button {
+    font-weight: bold;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 50px;
+    width: 200px;
+  }
+
+  .non-transparent-button {
+    color: #FFF;
+    background-color: crimson;
+    border: 1px solid crimson;
+  }
+
+  .transparent-button {
+    color: crimson;
+    background-color: transparent;
+    border: 1px solid crimson;
+  }
+
+  .transparent-button-2 {
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  /* Header Section */
+  li {
+    list-style-type: none;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('hero-photo.png');
+    background-size: cover;
+    color: #FFF;
+  }
+
+  .hero-words {
+    margin: 75% 5%;
+  }
+
+  .hero-words h2,
+  .hero-words p,
+  .hero-words .button {
+    margin-bottom: 2%;
+    position: relative;
+    right: 15%;
+  }
+
+  .hero-words h2 {
+    font-size: 30px;
+  }
+
+  .menu {
+    width: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .nav-bar-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 1% 5%;
+  }
+
+  .nav-bar-item {
+    display flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .juke-logo-blue-container {
+    display: flex;
+  }
+
+  .juke-logo-blue {
+    display: flex;
+    margin: 15% 50%;
+  }
+
+  .button + .button {
+    margin-left: 12px;
+  }
+
+  /* Pricing Section */
+  /* Pricing Section */
+  .pricing-basic-free,
+  .pricing-plus-medium,
+  .pricing-premium-high {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    border-radius: 10px;
+    margin: 1%;
+    padding: 5%;
+  }
+
+  .sign-up {
+    position: relative;
+    right: 5%;
+  }
+
+  .pricing-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .pricing {
+    color: white;
+  }
+
+  .pricing .button {
+    width: 150px;
+  }
+
+  .pricing-words {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10%
+  }
+
+  .pricing-words-head {
+    color: dodgerblue;
+  }
+
+  .pricing-words-sub-head {
+    color: darkgray;
+  }
+
+  .pricing-basic-free {
+    border: 1px solid darkcyan;
+    background-color: darkcyan;
+  }
+
+  .pricing-plus-medium {
+    border: 1px solid darkslateblue;
+    background-color: darkslateblue;
+  }
+
+  .pricing-premium-high {
+    border: 1px solid darkviolet;
+    background-color: darkviolet;
+  }
+
+  .pricing-words-head,
+  .pricing-words-sub-head {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricing-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 10% 5% 10%;
+  }
+
+  /* Features Section */
+  .features {
+    background-image: url('about-photo.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .features-columns {
+    display: flex;
+    justify-content: flex-start;
+    margin: 15% 10%;
+  }
+
+  .feature-1-container,
+  .feature-2-container,
+  .feature-3-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1%;
+  }
+  /* Album Section */
+  .album-words-head {
+    font-size: 50px;
+  }
+
+  .album-words-sub-head {
+    font-size: 25px;
+    color: darkgray;
+  }
+
+  .album-grid-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .album-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .album-grid-item {
+    /* display: flex;
+    justify-content: center; */
+    margin: 5% 5%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1200px) {
+  body {
+    /* background-color: #B2D6FF; /* Blue */ */
+  }
+
+  .button {
+    font-weight: bold;
+    padding: 10px 30px;
+    text-align: center;
+    border-radius: 50px;
+    width: 200px;
+  }
+
+  .non-transparent-button {
+    color: #FFF;
+    background-color: crimson;
+    border: 1px solid crimson;
+  }
+
+  .transparent-button {
+    color: crimson;
+    background-color: transparent;
+    border: 1px solid crimson;
+  }
+
+  .transparent-button-2 {
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #FFF;
+  }
+
+  /* Header Section */
+  li {
+    list-style-type: none;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('hero-photo.png');
+    background-size: cover;
+    color: #FFF;
+  }
+
+  .hero-words {
+    margin: 75% 5%;
+  }
+
+  .hero-words h2,
+  .hero-words p,
+  .hero-words .button {
+    margin-bottom: 2%;
+    position: relative;
+    right: 15%;
+  }
+
+  .hero-words h2 {
+    font-size: 30px;
+  }
+
+  .menu {
+    width: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    background-color: #fff;
+    overflow: hidden;
+  }
+
+  .nav-bar-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 1% 5%;
+  }
+
+  .nav-bar-item {
+    display flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .juke-logo-blue-container {
+    display: flex;
+  }
+
+  .juke-logo-blue {
+    display: flex;
+    margin: 15% 50%;
+  }
+
+  .button + .button {
+    margin-left: 12px;
+  }
+
+
+  /* Pricing Section */
+  .pricing-basic-free,
+  .pricing-plus-medium,
+  .pricing-premium-high {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    border-radius: 10px;
+    margin: 3%;
+    padding: 5%;
+  }
+
+  .pricing-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10%;
+    font-size: 20px;
+  }
+  .pricing {
+    color: white;
+  }
+
+  .pricing-words {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10%
+  }
+
+  .pricing-words-head {
+    color: dodgerblue;
+    font-size: 75px;
+  }
+
+  .pricing-words-sub-head {
+    color: darkgray;
+    font-size: 25px;
+  }
+
+  .pricing-basic-free {
+    border: 1px solid darkcyan;
+    background-color: darkcyan;
+  }
+
+  .pricing-plus-medium {
+    border: 1px solid darkslateblue;
+    background-color: darkslateblue;
+  }
+
+  .pricing-premium-high {
+    border: 1px solid darkviolet;
+    background-color: darkviolet;
+  }
+
+  .pricing-words-head,
+  .pricing-words-sub-head {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricing-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0% 5% 10% 5%;
+  }
+
+  /* Features Section */
+  .features {
+    background-image: url('about-photo.png');
+    background-size: cover;
+    color: white;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .features-columns {
+    display: flex;
+    justify-content: center;
+    margin: 15% 30%;
+    position: relative;
+    left: 5%;
+  }
+
+  .feature-1-container,
+  .feature-2-container,
+  .feature-3-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1%;
+    overflow: hidden;
+  }
+
+  .features-item {
+    margin-bottom: 10%;
+  }
+
+  /* Album Section */
+  .album-words-head {
+    font-size: 75px;
+  }
+
+  .album-words-sub-head {
+    font-size: 30px;
+    color: darkgray;
+  }
+
+  .album-grid-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .album-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .album-grid-item {
+    margin: 5% 5%;
+  }
+}
+
+/*Non-Media-Queries */
+/* ----- Component: Button ----- */
+/* .button {
+  font-weight: bold;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 50px;
+  width: 200px;
+}
+
+.non-transparent-button {
+  color: #FFF;
+  background-color: crimson;
+  border: 1px solid crimson;
+}
+
+.transparent-button {
+  color: crimson;
+  background-color: transparent;
+  border: 1px solid crimson;
+}
+
+.transparent-button-2 {
+  color: #FFF;
+  background-color: transparent;
+  border: 1px solid #FFF;
+} */
+
+/* Header Section */
+/* li {
+  list-style-type: none;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url('hero-photo.png');
+  background-size: cover;
+  color: #FFF;
+}
+
+.hero-words {
+  margin: 75% 5%;
+}
+
+.hero-words h2,
+.hero-words p,
+.hero-words .button {
+  margin-bottom: 2%;
+  position: relative;
+  right: 15%;
+}
+
+.hero-words h2 {
+  font-size: 30px;
+}
+
+.menu {
+  width: 100%;
+  border: 1px solid #fff;
+  display: flex;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.nav-bar-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 1% 5%;
+}
+
+.nav-bar-item {
+  display flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.juke-logo-blue-container {
+  display: flex;
+}
+
+.juke-logo-blue {
+  display: flex;
+  margin: 15% 50%;
+}
+
+.button + .button {
+  margin-left: 12px;
+} */
+
+/* Pricing Section */
+/* .pricing-basic-free,
+.pricing-plus-medium,
+.pricing-premium-high {
+  display: flex;
+  flex-direction: column;
+  width: calc(100%/3);
+  border-radius: 10px;
+  margin: 3%;
+  padding: 5%;
+}
+
+.pricing-item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pricing {
+  color: white;
+}
+
+.pricing-words {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10%
+}
+
+.pricing-words-head {
+  color: dodgerblue;
+}
+
+.pricing-words-sub-head {
+  color: darkgray;
+}
+
+.pricing-basic-free {
+  border: 1px solid darkcyan;
+  background-color: darkcyan;
+}
+
+.pricing-plus-medium {
+  border: 1px solid darkslateblue;
+  background-color: darkslateblue;
+}
+
+.pricing-premium-high {
+  border: 1px solid darkviolet;
+  background-color: darkviolet;
+}
+
+.pricing-words-head,
+.pricing-words-sub-head {
+  display: flex;
+  justify-content: center;
+}
+
+.pricing-columns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10%
+}
+
+/* Features Section */
+.features {
+  background-image: url('about-photo.png');
+  background-size: cover;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
+
+.features-columns {
+  display: flex;
+  justify-content: flex-start;
+  margin: 15% 10%;
+}
+
+.feature-1-container,
+.feature-2-container,
+.feature-3-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1%;
+} */
+
+/* Album Section */
+/* .album {
+} */
+.album {
+  color: white;
+
+}
+
+.album-words {
+  margin: 5%;
+}
+
+.album-words-head,
+.album-words-sub-head {
+  display: flex;
+  justify-content: center;
+}
+
+.album-words-head {
+  color: dodgerblue;
+  font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: dodgerblue;
+  padding: 1%;
+  overflow: hidden;
+}
+
+.footer-logo-container {
+  margin: 0.5% 5%;
+}
+
+.footer-social-container {
+  margin: 0% 5%;
+}
+
+}
